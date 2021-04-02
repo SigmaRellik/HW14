@@ -18,38 +18,38 @@ Before you work through the questions below, please create a new file and record
 Answer the following questions about the HTTP request and response process.
 
 1. What type of architecture does the HTTP request and response process occur in?
-    Client-Server Architecture
+    **Client-Server Architecture
 2. What are the different parts of an HTTP request? 
-    Request Line, Headers, Whitespace and Request Body
+    **Request Line, Headers, Whitespace and Request Body
 3. Which part of an HTTP request is optional?
-    Request Body
+    **Request Body
 4. What are the three parts of an HTTP response?
-    Status Line, Headers, Whitespace and Response Body
+    **Status Line, Headers, Whitespace and Response Body
 5. Which number class of status codes represents errors?
-    400: The client sent an improperly formatted request i.e. 404 ERROR
-    500: Server application failed somehow
+    **400: The client sent an improperly formatted request i.e. 404 ERROR
+    **500: Server application failed somehow
 6. What are the two most common request methods that a security professional will encounter?
-    GET and POST Requests
+    **GET and POST Requests
 7. Which type of HTTP request method is used for sending data?
-    POST Requests
+    **POST Requests
 8. Which part of an HTTP request contains the data being sent to the server?
-    Request Body
+    **Request Body
 9. In which part of an HTTP response does the browser receive the web code to generate and style a web page?
-    Response Body
+    **Response Body
 #### Using curl
 
 Answer the following questions about `curl`:
 
 10. What are the advantages of using `curl` over the browser?
-    It allows professionals to quickly test HTTP request that can be automated and allowing them to make adjustments.
+    **It allows professionals to quickly test HTTP request that can be automated and allowing them to make adjustments.
 11. Which `curl` option is used to change the request method?
-    -X 
+    **-X 
 12. Which `curl` option is used to set request headers?
-    -H 
+    **-H 
 13. Which `curl` option is used to view the response header?
-    -I
+    **-I
 14. Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?
-    OPTIONS
+    **OPTIONS
 #### Sessions and Cookies
 
 Recall that HTTP servers need to be able to recognize clients from one another. They do this through sessions and cookies.
@@ -57,7 +57,7 @@ Recall that HTTP servers need to be able to recognize clients from one another. 
 Answer the following questions about sessions and cookies:
 
 15. Which response header sends a cookie to the client?
-      Set-Cookie
+      **Set-Cookie:
       
     ```HTTP
     HTTP/1.1 200 OK
@@ -66,7 +66,7 @@ Answer the following questions about sessions and cookies:
     ```
 
 16. Which request header will continue the client's session?
-    Cookie
+    **Cookie: 
     
     ```HTTP
     GET /cart HTTP/1.1
@@ -94,13 +94,14 @@ username=Barbara&password=password
 ```
 
 17. What is the request method?
-    POST
+    **POST
 18. Which header expresses the client's preference for an encrypted response?
-    Upgrade-Insecure-Requests: 1
+    **Upgrade-Insecure-Requests: 1
 19. Does the request have a user session associated with it?
-    No, there isn't a cookie header
+    **No, there isn't a cookie header
 20. What kind of data is being sent from this request body?
-    login.php
+    **login.php
+    
 **HTTP Response**
 
 ```HTTP
@@ -121,15 +122,16 @@ X-XSS-Protection: 1; mode=block
 ```
 
 21. What is the response status code?
-    200 OK
+    **200 OK
 22. What web server is handling this HTTP response?
-    Apache
+    **Apache
 23. Does this response have a user session associated to it?
-    Yes, There's a set-Cookie header
+    **Yes, There's a set-Cookie header
 24. What kind of content is likely to be in the [page content] response body?
-    Content-Type: text/html
+    **Content-Type: text/html
 25. If your class covered security headers, what security request headers have been included?
-    Strict-Transport-Security: its redirecting all domains from HTTP to HTTPS on the same host 
+    **Strict-Transport-Security: its redirecting all domains from HTTP to HTTPS on the same host
+    
 #### Monoliths and Microservices
 
 Answer the following questions about monoliths and microservices:
