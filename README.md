@@ -159,7 +159,7 @@ Answer the following questions about multi-container deployment:
 32. Which type of SQL query would we use to enter new data into a table? (You don't need a full query, just the first part of the statement.)
     * INSERT INFO
 33. Why would we never run `DELETE FROM <table-name>;` by itself?
-    * Delete the whole table
+    * It would delete the whole table 
 ---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
